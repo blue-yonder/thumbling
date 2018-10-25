@@ -1,0 +1,45 @@
+{
+    "name": "thumbling",
+    "description": "chat bot who recognizes problems and checks Prometheus for alerts",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "",
+            "id": "128",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:8000/api/messages",
+            "name": "development"
+        },
+        {
+            "appId": "",
+            "id": "129",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "",
+            "name": "production"
+        },
+        {
+            "id": "",
+            "type": "luis",
+            "name": "production",
+            "version": "0.1",
+            "appId": "",
+            "authoringKey": "",
+            "subscriptionKey": "",
+            "region": "westeurope"
+        }
+    ],
+    "custom_services": [
+        {
+            "type": "prometheus",
+            "endpoint": "http://localhost:9000",
+            "name": "development"
+        },
+        {
+            "type": "prometheus",
+            "endpoint": "",
+            "name": "production"
+        }
+    ]
+}
