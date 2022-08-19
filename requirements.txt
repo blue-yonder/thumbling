@@ -4,7 +4,7 @@
 #
 #    pip-compile --no-index --output-file=requirements.txt requirements.in
 #
-aiohttp==3.4.4
+aiohttp==3.7.4
     # via -r requirements.in
 asn1crypto==0.24.0
     # via cryptography
@@ -47,7 +47,7 @@ msrest==0.6.10
     # via
     #   botbuilder-schema
     #   botframework-connector
-multidict==4.4.2
+multidict==6.0.2
     # via
     #   aiohttp
     #   yarl
@@ -70,6 +70,8 @@ six==1.11.0
     # via
     #   cryptography
     #   isodate
+typing-extensions==4.3.0
+    # via aiohttp
 urllib3==1.24.3
     # via
     #   -r requirements.in
