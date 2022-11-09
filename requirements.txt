@@ -6,8 +6,6 @@
 #
 aiohttp==3.7.4
     # via -r requirements.in
-asn1crypto==0.24.0
-    # via cryptography
 async-timeout==3.0.1
     # via aiohttp
 attrs==18.2.0
@@ -24,17 +22,16 @@ certifi==2018.10.15
     # via
     #   msrest
     #   requests
-cffi==1.11.5
+cffi==1.15.1
     # via cryptography
 chardet==3.0.4
     # via
     #   aiohttp
     #   requests
-cryptography==2.3.1
+cryptography==3.3.2
     # via botframework-connector
 idna==2.7
     # via
-    #   cryptography
     #   requests
     #   yarl
 iso8601==0.1.12
