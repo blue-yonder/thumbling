@@ -45,7 +45,7 @@ Even for running the bot locally the LUIS app is required and has to be setup in
 
 Install the requirements:
 
-    pip install -r requirements.txt
+    pip install -r requirements.in
 
 or for not pinned requirements:
 
